@@ -14,3 +14,14 @@
     <p class="landing-text2">Learn about <a href="safety.html"> regulations</a> </p>
 </body>
 </html>
+
+<script>
+     window.addEventListener("DOMContentLoaded", function () {
+            // Open a new window with the document content
+            const documentContent = "Begin your tattoo journey with the tattoo drawing simulator <br> <br>To draw, press your mouse down and slowly draw on your trackpad <br> <br> To stop the machine, press the mouse again ";
+            const popupWindow = window.open("", "_blank", "width=300, height=300");
+
+            // Write the content to the popup window
+            popupWindow.document.write(documentContent);
+        });
+</script>
