@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .landing-text {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1; /* Set a higher z-index */
+    font-weight: 600;
+  }
+  .landing-text2 {
+    text-align: center;
+    margin-top: 600px;
+    position: relative;
+    font-size: 15px;
+    z-index: 1; /* Set a higher z-index */
+  }
+  
+  .landing-text a {
+    pointer-events: auto;
+  }
+  
+  body {
+    margin: 0;
+    background: url('L1030927.png') center center/cover;
+  }
+  
+  canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Set an appropriate z-index */
+  }

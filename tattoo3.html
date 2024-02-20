@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="testimage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tattoo3.js"></script>
+    <title>Tattoo3</title>
+</head>
+<body>
+    <p class="landing-text"> A collection of Dream Tattoos</p>
+    <img src="IMG_4201.jpg" alt="Hello Image" class="hello-image" id="img1">
+    <img src="IMG_4203.png" alt="dream" class="hello-image" id="img2">
+    <img src="IMG_4204.png" alt="dream" class="hello-image" id="img3">
+    <img src="IMG_4222.png" alt="raf" class="hello-image" id="img4">
+    <img src="IMG_4223.png" alt="dream" class="hello-image" id="img5">
+    <img src="IMG_4224.png" alt="xandi" class="hello-image" id="img6">
+    <img src="IMG_4225.png" alt="raya" class="hello-image" id="img7">
+    <img src="IMG_4226.png" alt="raya" class="hello-image" id="img8">
+    <img src="IMG_4227.png" alt="raya" class="hello-image" id="img9">
+    <img src="IMG_4228.png" alt="nadine" class="hello-image" id="img10">
+    <img src="IMG_4229.png" alt="nadine" class="hello-image" id="img11">
+    <img src="B4CC448A-F8B9-4918-9DD7-40F56D70EE9B.JPG" alt="dream" class="hello-image" id="img12">
+    <img src="IMG_4230.png" alt="clouds" class="hello-image" id="img13">
+    <img src="IMG_4231.png" alt="startattoo" class="hello-image" id="img14">
+    <img src="IMG_4232.png" alt="matches" class="hello-image" id="img15">
+    <img src="IMG_4233.png" alt="matches" class="hello-image" id="img16">
+    <img src="IMG_4234.png" alt="anant" class="hello-image" id="img17">
+    <img src="IMG_4235.png" alt="anais" class="hello-image" id="img18">
+    <img src="IMG_4236.png" alt="lavina" class="hello-image" id="img19">
+    <img src="grace.png" alt="grace" class="hello-image" id="img20">
+    <img src="emma.png" alt="emma" class="hello-image" id="img21">
+    <img src="marian1.png" alt="marian" class="hello-image" id="img22">
+    <img src="nat.png" alt="nat" class="hello-image" id="img23">
+    <img src="tishika.png" alt="nat" class="hello-image" id="img24">
+    
+    <p class="landing-text2"> Click here to see <a href="artist.html"> tattoo artists</a> </p>
+
+    <!-- Include audio elements with unique IDs -->
+    <audio id="audio1" src="Sanchez.wav"></audio>
+    <audio id="audio4" src="Raf 2.m4a"></audio>
+    <audio id="audio6" src="Xandi.m4a"></audio>
+    <audio id="audio7" src="Raya.m4a"></audio>
+    <audio id="audio8" src="Raya 2.m4a"></audio>
+    <audio id="audio9" src="Raya 3.m4a"></audio>
+    <audio id="audio10" src="Nadine 1.m4a"></audio>
+    <audio id="audio11" src="Nadine 2.m4a"></audio>
+    <audio id="audio13" src="Allie.m4a"></audio>
+    <audio id="audio14" src="Allie_star_tattoo.mp3"></audio>
+    <audio id="audio15" src="matches.m4a"></audio>
+    <audio id="audio19" src="lavina.mp3"></audio>
+    <audio id="audio21" src="Emma.m4a"></audio>
+    <!-- Add more audio elements with unique IDs -->
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            // Open a new window with the document content
+            const documentContent = "Click on the images to learn more about people’s dream tattoos! <br> <br>To pause the audio, close the pop up window.<br> <br>Thank you to everyone who shared their dream tattoos and for helping me with this final! Greatly appreciated everyone's help and I hope you all get your dream tattoos one day 🫂";
+            const popupWindow = window.open("", "_blank", "width=400, height=400");
+
+            // Write the content to the popup window
+            popupWindow.document.write(documentContent);
+        });
+        // Add a single event listener to handle audio stopping
+        window.addEventListener("unload", function () {
+            // Iterate through audio elements and stop them
+            for (let i = 1; i <= 19; i++) {
+                const audioId = "audio" + i;
+                const audioElement = document.getElementById(audioId);
+                if (audioElement) {
+                    audioElement.pause();
+                }
+            }
+        });
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.safety {
+    text-align: center;
+}
+
+.landing-text2 {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    z-index: 1;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    border: none;
+}

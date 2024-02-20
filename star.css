@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  .star-container {
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+  }
+  
+  .star-image {
+    margin: 10px;
+    float: left; /* Float the image to the left */
+    width: 300px;
+    margin-right: 10px; /* Add some space between the image and the text */
+  }
+  
+  .star-text {
+    text-align: right; /* Align text to the right */
+    margin-top: 40px;
+    margin-right: 10px;
+    position: right; /* Use fixed positioning */
+    right: 20px; /* Adjust the distance from the right edge */
+    z-index: 1; /* Set a higher z-index */
+    font-weight: 400;
+  }
+
+.bottom-text {
+  position: fixed;
+  bottom: 0;
+  text-align: center; /* Optionally center the text horizontally */
+  width: 100%; /* Optionally make the text span the entire width */
+  padding: 10px; /* Optionally add padding for better visibility */
+  font-weight: 400;
+}
+
+
