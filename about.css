@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .landing-text {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    z-index: 1; /* Set a higher z-index */
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .landing-text2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    z-index: 1; /* Set a higher z-index */
+    font-weight: 40;
+    font-size: 15px;
+  }

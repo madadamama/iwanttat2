@@ -1,0 +1,66 @@
+/* artist.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(18, 18, 93);;
+}  
+
+
+.landing-text2 {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin between text and image container */
+    position: relative;
+    font-size: 15px;
+    z-index: 1; /* Set a higher z-index */
+    color: rgb(255, 255, 255);;
+}
+
+.image-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-around; /* Adjust to space-between for four columns */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  
+    border: 200px solid beige; /* Add border around the container */
+    
+    padding: 10px; /* Add padding inside the container */
+    background-color: beige;
+}
+
+img {
+    width: 22%; /* Adjust width for four columns */
+    height: auto;
+    margin: 10px 0; /* Adjust margin between images */
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}

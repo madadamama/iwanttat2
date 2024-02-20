@@ -1,0 +1,26 @@
+body {
+    margin: 0;   
+}
+
+.image-container {
+    width: 100vw; /* 100% of viewport width */
+    height: 100vh; /* 100% of viewport height */
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the image behind other content */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease; /* Smooth transition for background image */
+}
+
+.content {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    bottom: 20px; /* Adjust this value to set the distance from the bottom */
+    width: 100%; /* Take the full width of the viewport */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+

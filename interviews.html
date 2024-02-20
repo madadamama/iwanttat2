@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interviews.css">
+    <title>Interviews</title>
+</head>
+<body>
+    <p class="landing-text">Intervies with a few tattoo artists</p>
+    <ul class="landing-text2" id="interviewList">
+        <li><a href="#" onclick="openPopup('koreanbein.html')">@koreanbein</a></li>
+        <li><a href="#" onclick="openPopup('palmtonib.html')">@palmtonib</a></li>
+        <li><a href="#" onclick="openPopup('puppygoblin.html')">@puppygoblin</a></li>
+        <li><a href="#" onclick="openPopup('hand__hold.html')">@hand__hold</a></li>
+        <li><a href="#" onclick="openPopup('sillytatty.html')">@sillytatty</a></li>
+        <li><a href="#" onclick="openPopup('meta____morphosis.html')">@meta____morphosis</a></li>
+        <li><a href="#" onclick="openPopup('wilsonistheworst.html')">@wilsonistheworst</a></li>
+        <li><a href="#" onclick="openPopup('juleghoul.html')">@juleghoul</a></li>
+        <li><a href="#" onclick="openPopup('stinkypork.html')">@stinkypork</a></li>
+        <li><a href="#" onclick="openPopup('cherizhou.html')">@cherizhou</a></li>
+        <li><a href="#" onclick="openPopup('leenieboog.html')">@leenie________boog</a></li>
+        <li><a href="#" onclick="openPopup('bunnykisstattoo.html')">@bunnykisstattoo</a></li>
+        <li><a href="#" onclick="openPopup('puppybit3s.html')">@puppybit3s</a></li>
+        <li><a href="#" onclick="openPopup('tattoosbypriya.html')">@tattoosbypriya</a></li>
+        <li><a href="#" onclick="openPopup('coolboycowpokes.html')">@coolboycowpokes</a></li>
+        <li><a href="#" onclick="openPopup('missmodular.html')">@__missmodular</a></li>
+        <li><a href="#" onclick="openPopup('pokeybear.html')">@_p0key_bear</a></li>
+        <li><a href="#" onclick="openPopup('shuuin.html')">@shuuinn</a></li>
+        <li><a href="#" onclick="openPopup('emilyparadetattoo.html')">@emilys_parade_tattoos</a></li>
+    </ul>
+    <p class="landing-text3"> About this <a href="about.html"> project</a></p>
+    <script>
+
+        window.addEventListener("DOMContentLoaded", function () {
+            // Open a new window with the document content
+            const documentContent = "To all the tattoo artists that helped me with this project, you have no idea how grateful and honored I am that you were willing to share your experiences with me. Thank you for being vulnerable and sharing/trusting me with your personal experiences with tattooing. Each and every one of your answers has encouraged me to reach out, talk to more artists, and finally try stick and poke tattooing again. <br> <br> Thank you once again, it has been such a pleasure getting to talk to each and every one of you. <br> <br>Please go look at everyone's interviews because each answer is answered with so much intention.";
+            const popupWindow = window.open("", "_blank", "width=400, height=400");
+
+            // Write the content to the popup window
+            popupWindow.document.write(documentContent);
+        });
+
+        function openPopup(interviewee) {
+            // Open a popup window with the specified HTML file
+            const popupUrl = interviewee;
+            window.open(popupUrl, "_blank", "width=800, height=800");
+        }
+    </script>
+</body>
+</html>
+
