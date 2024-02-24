@@ -21,10 +21,13 @@
   z-index: 1; /* Set a higher z-index */
   font-weight: 600;
 }
+
 .landing-text2 {
   text-align: center;
-  margin-top: 600px;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 15px;
   z-index: 1; /* Set a higher z-index */
   color: aliceblue;
